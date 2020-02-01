@@ -6,10 +6,7 @@ plugins {
 
 group = 'com.godoineto'
 version = '0.0.1-SNAPSHOT'
-compileJava {
-	sourceCompatibility = 1.11
-	targetCompatibility = 1.11
-}
+sourceCompatibility = '11'
 
 configurations {
 	developmentOnly
