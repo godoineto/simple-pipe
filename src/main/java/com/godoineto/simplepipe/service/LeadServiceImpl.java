@@ -1,6 +1,7 @@
 package com.godoineto.simplepipe.service;
 
 import com.godoineto.simplepipe.api.dto.LeadDTO;
+import com.godoineto.simplepipe.integration.CRMIntegrate;
 import com.godoineto.simplepipe.model.Lead;
 import com.godoineto.simplepipe.model.LeadStatus;
 import com.godoineto.simplepipe.repository.LeadRepository;
@@ -16,10 +17,12 @@ public class LeadServiceImpl implements LeadService {
 
     private final LeadRepository repository;
     private final LeadMapper mapper;
+    private final CRMIntegrate processor;
 
-    public LeadServiceImpl(LeadRepository repository, LeadMapper mapper) {
+    public LeadServiceImpl(LeadRepository repository, LeadMapper mapper, CRMIntegrate processor) {
         this.repository = repository;
         this.mapper = mapper;
+        this.processor = processor;
     }
 
     @Override
@@ -67,8 +70,12 @@ public class LeadServiceImpl implements LeadService {
     @Override
     public Optional<LeadDTO> finish(String id, LeadStatus status) {
         return repository.findById(id)
+                .filter(Lead::isOpen)
                 .map(lead -> {
                     lead.setStatus(status);
+                    if (LeadStatus.WON.equals(status)) {
+                        processor.wonLead(mapper.toDTO(lead));
+                    }
                     return mapper.toDTO(repository.save(lead));
                 });
     }

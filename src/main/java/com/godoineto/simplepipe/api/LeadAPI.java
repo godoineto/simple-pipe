@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/lead")
+@RequestMapping("/v1/lead")
 @Api(tags = "Lead Resource", description = "Set of endpoints to management lead resource")
 public class LeadAPI implements GeneralAPI {
 
