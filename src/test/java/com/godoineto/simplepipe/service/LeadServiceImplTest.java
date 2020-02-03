@@ -1,6 +1,8 @@
 package com.godoineto.simplepipe.service;
 
 import com.godoineto.simplepipe.api.dto.LeadDTO;
+import com.godoineto.simplepipe.integration.CRMIntegrate;
+import com.godoineto.simplepipe.integration.pipedrive.PipedriveIntegrate;
 import com.godoineto.simplepipe.model.Lead;
 import com.godoineto.simplepipe.model.LeadStatus;
 import com.godoineto.simplepipe.repository.LeadRepository;
@@ -20,12 +22,14 @@ class LeadServiceImplTest {
     LeadService service;
     LeadRepository repository;
     LeadMapper mapper;
+    CRMIntegrate crmIntegrate;
 
     @BeforeEach
     void setup() {
         repository = mock(LeadRepository.class);
         mapper = mock(LeadMapper.class);
-        service = new LeadServiceImpl(repository, mapper);
+        crmIntegrate = mock(PipedriveIntegrate.class);
+        service = new LeadServiceImpl(repository, mapper, crmIntegrate);
     }
 
     @Test
