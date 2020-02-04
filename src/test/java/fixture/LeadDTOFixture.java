@@ -3,6 +3,7 @@ package fixture;
 import com.godoineto.simplepipe.api.dto.LeadDTO;
 import com.godoineto.simplepipe.model.LeadStatus;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LeadDTOFixture {
@@ -16,6 +17,13 @@ public class LeadDTOFixture {
         leadDTO.setStatus(LeadStatus.OPEN);
         leadDTO.setSite("https://www.lead.com.br");
         leadDTO.setPhones(Arrays.asList("48988880000", "48911110022"));
+        return leadDTO;
+    }
+
+    public static LeadDTO withNoteDTO() {
+        LeadDTO leadDTO = get();
+        leadDTO.setNotes(new ArrayList<>());
+        leadDTO.getNotes().add(NoteDTOFixture.get());
         return leadDTO;
     }
 }

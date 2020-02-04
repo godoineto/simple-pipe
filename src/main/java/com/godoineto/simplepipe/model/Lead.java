@@ -1,6 +1,5 @@
 package com.godoineto.simplepipe.model;
 
-import com.godoineto.simplepipe.api.dto.NoteDTO;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -20,7 +19,7 @@ public class Lead {
     private String site;
     private List<String> phones;
     private LeadStatus status;
-    private List<NoteDTO> notes;
+    private List<Note> notes;
     private String responsible;
 
     public boolean isOpen() {

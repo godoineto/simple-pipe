@@ -47,8 +47,8 @@ class LeadServiceImplTest {
 
     @Test
     void shouldUpdateLeadWhenHasAnotherWithSameEmailAndIsFinished() {
-        LeadDTO leadDTO = LeadDTOFixture.get();
-        Lead lead = LeadFixture.get();
+        LeadDTO leadDTO = LeadDTOFixture.withNoteDTO();
+        Lead lead = LeadFixture.withNote();
 
         Lead anotherLead = LeadFixture.get();
         anotherLead.setId("Old Id");
@@ -137,11 +137,14 @@ class LeadServiceImplTest {
     void shouldChangeStatusCorrectly() {
         LeadDTO leadDTO = LeadDTOFixture.get();
         Lead lead = mock(Lead.class);
+        when(lead.isOpen()).thenReturn(true);
         when(repository.findById(leadDTO.getId())).thenReturn(Optional.of(lead));
+        when(mapper.toDTO(lead)).thenReturn(leadDTO);
 
         service.finish(leadDTO.getId(), LeadStatus.WON);
 
         verify(lead, times(1)).setStatus(LeadStatus.WON);
+        verify(crmIntegrate, times(1)).wonLead(leadDTO);
         verify(repository, times(1)).save(lead);
     }
 

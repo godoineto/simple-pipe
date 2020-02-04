@@ -3,6 +3,7 @@ package fixture;
 import com.godoineto.simplepipe.model.Lead;
 import com.godoineto.simplepipe.model.LeadStatus;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LeadFixture {
@@ -18,4 +19,12 @@ public class LeadFixture {
         lead.setPhones(Arrays.asList("48988880000", "48911110022"));
         return lead;
     }
+
+    public static Lead withNote() {
+        Lead lead = get();
+        lead.setNotes(new ArrayList<>());
+        lead.getNotes().add(NoteFixture.get());
+        return lead;
+    }
+
 }

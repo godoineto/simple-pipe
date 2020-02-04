@@ -8,5 +8,4 @@ import javax.validation.constraints.NotNull;
 public class NoteDTO {
     @NotNull(message = "{note.text.invalid}")
     private String text;
-    private String owner;
 }
