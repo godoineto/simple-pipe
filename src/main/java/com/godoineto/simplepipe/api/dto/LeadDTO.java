@@ -1,6 +1,6 @@
 package com.godoineto.simplepipe.api.dto;
 
-import com.godoineto.simplepipe.model.LeadStatus;
+import com.godoineto.simplepipe.domain.LeadStatus;
 import lombok.Data;
 
 import javax.validation.constraints.Email;
@@ -22,5 +22,5 @@ public class LeadDTO {
     private List<String> phones;
     private LeadStatus status;
     private List<NoteDTO> notes;
-    private String responsible;
+    private String responsibleId;
 }

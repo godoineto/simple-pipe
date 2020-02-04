@@ -1,4 +1,4 @@
-package com.godoineto.simplepipe.model;
+package com.godoineto.simplepipe.domain;
 
 import lombok.Data;
 

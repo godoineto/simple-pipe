@@ -1,6 +1,6 @@
 package com.godoineto.simplepipe.repository;
 
-import com.godoineto.simplepipe.model.Lead;
+import com.godoineto.simplepipe.domain.Lead;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

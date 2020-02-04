@@ -1,4 +1,4 @@
-package com.godoineto.simplepipe.model;
+package com.godoineto.simplepipe.domain;
 
 public enum LeadStatus {
     OPEN, WON, LOST

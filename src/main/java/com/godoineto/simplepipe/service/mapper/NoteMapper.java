@@ -1,7 +1,7 @@
 package com.godoineto.simplepipe.service.mapper;
 
 import com.godoineto.simplepipe.api.dto.NoteDTO;
-import com.godoineto.simplepipe.model.Note;
+import com.godoineto.simplepipe.domain.Note;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

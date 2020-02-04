@@ -3,7 +3,7 @@ package com.godoineto.simplepipe.api;
 import com.godoineto.simplepipe.api.dto.LeadDTO;
 import com.godoineto.simplepipe.api.util.ResponseUtil;
 import com.godoineto.simplepipe.config.GeneralAPI;
-import com.godoineto.simplepipe.model.LeadStatus;
+import com.godoineto.simplepipe.domain.LeadStatus;
 import com.godoineto.simplepipe.service.LeadService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

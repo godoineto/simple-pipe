@@ -1,6 +1,6 @@
 package fixture;
 
-import com.godoineto.simplepipe.model.User;
+import com.godoineto.simplepipe.domain.User;
 
 public class UserFixture {
 

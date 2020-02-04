@@ -1,6 +1,6 @@
 package fixture;
 
-import com.godoineto.simplepipe.model.Note;
+import com.godoineto.simplepipe.domain.Note;
 
 public class NoteFixture {
 

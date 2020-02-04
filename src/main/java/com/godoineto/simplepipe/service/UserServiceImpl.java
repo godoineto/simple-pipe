@@ -1,7 +1,7 @@
 package com.godoineto.simplepipe.service;
 
 import com.godoineto.simplepipe.api.dto.UserDTO;
-import com.godoineto.simplepipe.model.User;
+import com.godoineto.simplepipe.domain.User;
 import com.godoineto.simplepipe.repository.UserRepository;
 import com.godoineto.simplepipe.service.mapper.UserMapper;
 import org.springframework.stereotype.Service;

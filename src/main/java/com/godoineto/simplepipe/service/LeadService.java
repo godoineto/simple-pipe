@@ -1,7 +1,7 @@
 package com.godoineto.simplepipe.service;
 
 import com.godoineto.simplepipe.api.dto.LeadDTO;
-import com.godoineto.simplepipe.model.LeadStatus;
+import com.godoineto.simplepipe.domain.LeadStatus;
 
 import java.util.List;
 import java.util.Optional;

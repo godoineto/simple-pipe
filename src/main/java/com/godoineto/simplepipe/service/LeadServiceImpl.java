@@ -1,9 +1,9 @@
 package com.godoineto.simplepipe.service;
 
 import com.godoineto.simplepipe.api.dto.LeadDTO;
+import com.godoineto.simplepipe.domain.Lead;
+import com.godoineto.simplepipe.domain.LeadStatus;
 import com.godoineto.simplepipe.integration.CRMIntegrate;
-import com.godoineto.simplepipe.model.Lead;
-import com.godoineto.simplepipe.model.LeadStatus;
 import com.godoineto.simplepipe.repository.LeadRepository;
 import com.godoineto.simplepipe.service.mapper.LeadMapper;
 import org.springframework.stereotype.Service;
