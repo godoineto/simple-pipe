@@ -9,8 +9,8 @@
 <p align="center">
 <img src="https://github.com/godoineto/simple-pipe/blob/master/images/java.png" title="Java" width="60px" heigth="60px"/>
 <img src="https://github.com/godoineto/simple-pipe/blob/master/images/spring.jpg" title="Spring Boot" width="60px" heigth="60px"/>
-<img src="https://github.com/godoineto/simple-pipe/blob/master/images/mongo.jpg" title="Mongo" width="60px" heigth="60px"/>
-<img src="https://github.com/godoineto/simple-pipe/blob/master/images/swagger.png" title="Swagger" width="60px" heigth="60px"/>
-<img src="https://github.com/godoineto/simple-pipe/blob/master/images/junit5.png" title="JUnit" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/simple-pipe/blob/master/images/mongo.jpg" title="MongoDB" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/simple-pipe/blob/master/images/swagger.png" title="Swagger UI" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/simple-pipe/blob/master/images/junit5.png" title="JUnit 5" width="60px" heigth="60px"/>
 </p>
 <br/>
