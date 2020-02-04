@@ -8,7 +8,7 @@
 <h2 align="center">Used technologies</h2>
 <p align="center">
 <img src="https://github.com/godoineto/simple-pipe/blob/master/images/java.png" title="Java" width="60px" heigth="60px"/>
-<img src="https://github.com/godoineto/simple-pipe/blob/master/images/gradle.png" title="Java" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/simple-pipe/blob/master/images/gradle.png" title="Gradle" width="60px" heigth="60px"/>
 <img src="https://github.com/godoineto/simple-pipe/blob/master/images/spring.jpg" title="Spring Boot" width="60px" heigth="60px"/>
 <img src="https://github.com/godoineto/simple-pipe/blob/master/images/mongo.jpg" title="MongoDB" width="60px" heigth="60px"/>
 <img src="https://github.com/godoineto/simple-pipe/blob/master/images/swagger.png" title="Swagger UI" width="60px" heigth="60px"/>
