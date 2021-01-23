@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://simplepipe.herokuapp.com/api/swagger-ui.html#/"><img src="simple-pipe-logo.png" width="120px" heigth="120px"/></a></br>
+  <a href="#/"><img src="simple-pipe-logo.png" width="120px" heigth="120px"/></a></br>
 </p>
 <p align="center"><b>Simple pipe</b> is a small API to simplify integration with <a href="https://www.pipedrive.com/">Pipedrive</a>, to allow fully management of application's leads.
 <br/>More information <a href="https://github.com/godoineto/simple-pipe/issues/1">here</a>.</p>
@@ -20,5 +20,5 @@ The API is documented with Swagger UI has some tests written in JUnit.
 
 <br/>
 <p align="center">
-<a href="https://simplepipe.herokuapp.com/api/swagger-ui.html#/"><b>Simple Pipe Docs</b></a>
+<a href="#"><b>Simple Pipe Docs</b></a>
 </p>
